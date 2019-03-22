@@ -38,12 +38,12 @@ public class StartedServiceBroadcastReceiver extends BroadcastReceiver {
         }
         if (messageTextView != null) {
             messageTextView.setText(messageTextView.getText().toString() + "\n" + data);
-        } /*else {
+        } else {
             Intent startedServiceActivityIntent = new Intent(context, StartedServiceActivity.class);
             startedServiceActivityIntent.putExtra(Constants.MESSAGE, data);
             startedServiceActivityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             context.startActivity(startedServiceActivityIntent);
-        }*/
+        }
 
         // TODO: exercise 10 - restart the activity through an intent
         // if the messageTextView is not available
